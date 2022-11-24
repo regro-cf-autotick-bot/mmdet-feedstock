@@ -1,5 +1,5 @@
 {% set name = "mmdet" %}
-{% set version = "2.25.3" %}
+{% set version = "2.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/open-mmlab/mmdetection/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 69cd01a057a027142efb2d3ef06a7c7e18309aecb493c7c6a4a0e29eedb6bafd
+  sha256: eb1ff15e4534ec08aaf040683b475885b9ca153e32263d79b0adeb1c13731f46
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - pycocotools
     - python >=3.7
     - pytorch
+    - scipy
     - six
     - terminaltables
 

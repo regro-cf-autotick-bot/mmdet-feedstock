@@ -1,11 +1,11 @@
-About mmdet
-===========
+About mmdet-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mmdet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/open-mmlab/mmdetection
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mmdet-feedstock/blob/main/LICENSE.txt)
 
 Summary: OpenMMLab Detection Toolbox and Benchmark
 

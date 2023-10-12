@@ -1,5 +1,5 @@
 {% set name = "mmdet" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/open-mmlab/mmdetection/archive/refs/tags/v{{ version }}.zip
-  sha256: ec1e3917f1b93c0b9f4c5b8846809d47a8616975fbacbf111c3f5048c28a4d0e
+  sha256: c04755e029552177a038f57fffe8102f7e37b5a52f1b4e5f39a4554258147613
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - shapely
     - six
     - terminaltables
+    - tqdm
 
 test:
   imports:

@@ -20,7 +20,7 @@ requirements:
     - python {{ python_min }}
     - pytorch
   run:
-    - mmcv
+    - mmcv <2.2.0  # https://github.com/open-mmlab/mmdetection/issues/11668
     - numpy
     - py-opencv
     - pycocotools

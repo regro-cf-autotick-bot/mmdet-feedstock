@@ -12,19 +12,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - pytorch
   run:
     - mmcv
     - numpy
     - py-opencv
     - pycocotools
-    - python >=3.7
+    - python >={{ python_min }}
     - pytorch
     - scipy
     - shapely
@@ -37,6 +37,7 @@ test:
     - mmdet
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - python -c "import mmdet; print(mmdet.__version__)"

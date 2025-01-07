@@ -35,6 +35,8 @@ requirements:
 test:
   imports:
     - mmdet
+  source_files:
+    - tests
   requires:
     - pip
     - pytest

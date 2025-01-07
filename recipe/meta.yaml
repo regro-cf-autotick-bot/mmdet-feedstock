@@ -38,6 +38,7 @@ test:
   source_files:
     - tests
   requires:
+    - parameterized
     - pip
     - pytest
     - python {{ python_min }}
